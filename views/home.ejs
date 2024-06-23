@@ -1,0 +1,25 @@
+
+<script src = "socket.io/socket.io.js"></script>
+
+var socket = io("loacalhost:5000")
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Điều khiển 7 đèn báo</title>
+</head>
+<body>
+    <h1>Điều khiển 7 đèn báo</h1>
+    <button onclick="toggleLed(1)">Đèn 1</button>
+    <button onclick="toggleLed(2)">Đèn 2</button>
+    <!-- Thêm các nút cho 5 đèn báo còn lại -->
+
+    <script>
+        function toggleLed(ledNumber) {
+            // Gửi yêu cầu điều khiển đèn báo đến máy chủ
+            // Sử dụng AJAX hoặc Fetch API để gửi yêu cầu
+            // Ví dụ: /toggle?led=1 để bật/tắt đèn 1
+        }
+    </script>
+</body>
+</html>
